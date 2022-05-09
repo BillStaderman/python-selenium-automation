@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # init driver
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(executable_path='C:\\Users\\William\\Desktop\\python-selenium-automation\\chromedriver.exe')
 driver.maximize_window()
 
 # open the url
@@ -13,7 +13,7 @@ search = driver.find_element(By.NAME, 'q')
 search.clear()
 search.send_keys('Dress')
 
-# wait for 4 sec
+# wait for 4 secf
 sleep(4)
 
 # click search
